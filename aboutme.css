@@ -11,6 +11,12 @@ body {
     color: #333; 
     background-color: #f4f4f4; 
 }
+.homepage{
+    background-image: url('images/AboutMe/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* Navigation Bar Styles */
 header {
     width: 100%;
@@ -109,4 +115,134 @@ footer {
     text-align: center;
     padding: 2rem;
     margin-top: 4rem;
+}
+
+/* Transparent Section Styles */
+.transparent-section {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 800px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text-content h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight:bold;
+}
+
+.text-content p {
+    color: 333;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 12px 30px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #333;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+/* Info section below transparent content */
+.info-section {
+    padding-top: 1rem;
+    padding-left: 4rem;
+}
+
+.info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.info-column {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.info-item {
+    background: transparent;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+ 
+}
+
+/* Align content with transparent section */
+.info-section .info-grid {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Icon styling */
+.icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align:auto;
+    margin-right: 10px;
+}
+
+/* Style for the university ranking */
+.ranking {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #666;
+    margin-top: 0.1rem;
+    margin-left: 0; /* Align with text above */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .transparent-section {
+        margin: 30px 20px;
+        padding: 30px 20px;
+    }
+    
+    .text-content h1 {
+        font-size: 2em;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 200px;
+        text-align: center;
+    }
 }

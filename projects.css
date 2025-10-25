@@ -11,6 +11,12 @@ body {
     color: #333; 
     background-color: #f4f4f4; 
 }
+.homepage{
+    background-image: url('images/Project/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* Navigation Bar Styles */
 header {
     width: 100%;

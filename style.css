@@ -18,15 +18,19 @@
 
 /* Hero Section Layout - TWO COLUMNS */
 .hero-content {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    gap: 2rem; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-column {
+    margin-right: 2rem;
 }
 .image-column {
     flex: 1;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
+    margin-right: 2rem;
 }
 
 /* Image Styling */
@@ -63,7 +67,10 @@ h1{
 .button-container {
     display: flex;
     justify-content: left;
-    gap: 2rem; 
+}
+
+.circle-button + .circle-button {
+    margin-left: 2rem;
 }
 
 .circle-button {
@@ -110,8 +117,11 @@ h1{
 }
 .contact-content {
     display: flex;
-    gap: 50px;
     align-items: flex-start;
+}
+
+.contact-form {
+    margin-right: 50px;
 }
 
 

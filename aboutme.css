@@ -20,7 +20,10 @@
 .content-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+}
+
+.content-wrapper > * + * {
+    margin-top: 30px;
 }
 
 .text-content h1 {
@@ -39,8 +42,11 @@
 
 .action-buttons {
     display: flex;
-    gap: 20px;
     justify-content: center;
+}
+
+.action-buttons .btn + .btn {
+    margin-left: 20px;
 }
 
 .btn {
@@ -68,8 +74,11 @@
 .info-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
     justify-content: center;
+}
+
+.info-column + .info-column {
+    margin-left: 1rem;
 }
 
 .info-column {

@@ -16,8 +16,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     margin-top: 3.125rem;
+}
+
+.resume-download-btn + .resume-download-btn {
+    margin-left: 2rem;
 }
 
 .resume-download-btn {
@@ -64,12 +67,15 @@
 
 .job {
     display: flex;
-    gap: 30px;
     margin-bottom: 40px;
     align-items: flex-start;
     border-radius: 10px;
     background-color: #fff;
     padding: 20px 40px 20px 5px;
+}
+
+.job-details {
+    margin-left: 30px;
 }
 
 .job-period {
@@ -265,13 +271,15 @@
 .cert-grid {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+}
+
+.cert-card + .cert-card {
+    margin-top: 16px;
 }
 
 .cert-card {
     display: flex;
     align-items: center;
-    gap: 16px;
     background: #fff;
     border-radius: 10px;
     padding: 18px 24px;
@@ -282,6 +290,11 @@
 .cert-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.cert-card-thumbnail,
+.cert-card-info {
+    margin-right: 16px;
 }
 
 .cert-card-thumbnail {
@@ -321,8 +334,11 @@
 .cert-btn-group {
     display: flex;
     flex-direction: column;
-    gap: 8px;
     flex-shrink: 0;
+}
+
+.cert-btn-group .cert-btn + .cert-btn {
+    margin-top: 8px;
 }
 
 /* Certificate button */
@@ -353,7 +369,10 @@
 .cert-modal {
     display: none;
     position: fixed;
-    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 2000;
     align-items: center;

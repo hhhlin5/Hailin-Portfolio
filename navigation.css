@@ -23,9 +23,12 @@ header {
 
 .social-links {
     display: flex;
-    gap: 40px;
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+.social-links a + a {
+    margin-left: 40px;
 }
 
 .social-links a {

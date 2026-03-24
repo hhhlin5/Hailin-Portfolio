@@ -1,0 +1,395 @@
+.homepage{
+    background-image: url('images/Resume/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.page-title{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 100px;
+}
+
+.resume-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3.125rem;
+}
+
+.resume-download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bea89d;
+    color: #333;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 1.875rem;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; 
+}
+
+.btn-icon {
+    width: 1.5625rem;
+    height: 0.9375rem;
+    margin-left: 0.5rem; 
+}
+
+.resume-download-btn:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+/* Main Experience Section Styling */
+.experience {
+    max-width: 800px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+}
+
+.experience h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333; 
+    text-align: left;
+}
+
+.job {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    align-items: flex-start;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px 40px 20px 5px;
+}
+
+.job-period {
+    flex: 0 0 180px;
+    text-align: left;
+    margin-left: 30px;
+    color: #333;
+}
+
+.job-period p {
+    font-weight: 600;
+    color: #555;
+}
+
+.job-details {
+    flex: 1;
+}
+
+.job-title {
+    font-size: 1.4rem;
+    margin: 0 0 8px 0;
+    color: #333;
+}
+
+.company {
+    color: #666;
+    margin: 0 0 16px 0;
+    font-style: italic;
+}
+
+.job-description {
+    line-height: 1.6;
+    color: #444;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Main Education Section Styling */
+.education {
+    max-width: 800px; 
+    margin: 40px auto; 
+    padding: 0 20px; 
+}
+.education h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333; 
+    text-align: left;
+}
+     
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+          
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: #bea89d;
+}
+        
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+        
+.timeline-item:hover {
+    transform: translateY(-10px);        
+}
+        
+/* Circle marker */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 25px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #bea89d;
+    border: 4px solid white;
+    z-index: 1;
+}
+        
+.date {
+    font-size: 1.1rem;
+    color: #bea89d;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+        
+.degree {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+        
+.school {
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+        
+.gpa {
+    font-size: 1rem;
+    color: #7f8c8d;
+    background: #f8f9fa;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.skill {
+    max-width: 1500px; 
+    margin: 40px auto; 
+    padding: 0 20px;
+    background-color: transparent;
+  }
+
+.skill h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: left;
+}
+
+.skill-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.skill-category {
+    width: 280px;
+    background-color: #fff;
+    padding: 20px;
+}
+  
+.skill-category h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.skill-category ul {
+    list-style-type: none;
+    padding: 10px;
+}
+.skill-category ul li {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #bea89d;
+    border-radius: 4px;
+}
+
+/* Certifications Section */
+.certifications {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.certifications h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: left;
+}
+
+.cert-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cert-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 18px 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.cert-card-thumbnail {
+    width: 220px;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+    border: 1px solid #e0d5d0;
+}
+
+.cert-card-info {
+    flex: 1;
+}
+
+.cert-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.cert-card-issuer {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+.cert-card-date {
+    font-size: 0.85rem;
+    color: #bea89d;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+/* Certificate button group */
+.cert-btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+/* Certificate button */
+.cert-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #333;
+    background-color: #f0e8e4;
+    border: 1.5px solid #bea89d;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.cert-btn:hover {
+    background-color: #bea89d;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Certificate modal overlay */
+.cert-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-modal.open {
+    display: flex;
+}
+
+.cert-modal-content {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 90vw;
+    max-height: 90vh;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.cert-modal-content img {
+    display: block;
+    max-width: 100%;
+    max-height: 80vh;
+    border-radius: 6px;
+}
+
+.cert-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.cert-modal-close:hover {
+    color: #333;
+}

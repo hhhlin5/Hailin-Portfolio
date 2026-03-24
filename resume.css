@@ -142,6 +142,10 @@
     padding: 25px;
     transition: transform 0.3s ease;
 }
+
+.timeline-item .cert-btn {
+    margin-top: 12px;
+}
         
 .timeline-item:hover {
     transform: translateY(-10px);        
@@ -192,11 +196,11 @@
 }
 
 .skill {
-    max-width: 1500px; 
-    margin: 40px auto; 
+    max-width: 800px;
+    margin: 40px auto;
     padding: 0 20px;
     background-color: transparent;
-  }
+}
 
 .skill h2 {
     font-size: 2rem;
@@ -206,14 +210,16 @@
 }
 
 .skill-categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
 }
+
 .skill-category {
-    width: 280px;
     background-color: #fff;
     padding: 20px;
+    border-radius: 8px;
+    align-self: start;
 }
   
 .skill-category h3 {
@@ -325,7 +331,6 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    margin-top: 12px;
     padding: 6px 14px;
     font-size: 0.85rem;
     font-weight: 600;

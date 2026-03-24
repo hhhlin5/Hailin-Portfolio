@@ -143,6 +143,43 @@
 
 /* 大手机横屏：640px-767px */
 @media screen and (max-width: 768px) {
+    /* Resume download buttons: wrap on small screens */
+    .resume-button-container {
+        flex-wrap: wrap;
+    }
+
+    /* Certifications: stack vertically */
+    .cert-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cert-card-thumbnail {
+        width: 100%;
+        height: auto;
+    }
+
+    .cert-btn-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* Contact form: full width */
+    .contact-form {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .information-column {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Skills: already 2 columns on desktop, keep same on tablet */
+    .skill-category {
+        width: auto;
+    }
+
     .hamburger {
         display: flex;
     }
@@ -271,6 +308,11 @@
 
 /* 标准手机：480px-639px */
 @media screen and (max-width: 640px) {
+    /* Skills: single column on small phones */
+    .skill-categories {
+        grid-template-columns: 1fr;
+    }
+
     .hero {
         padding: 1.5rem 1rem;
         min-height: 60vh;

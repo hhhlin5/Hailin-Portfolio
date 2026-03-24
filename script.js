@@ -24,6 +24,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Project modals
+    document.querySelectorAll('.project-card').forEach(function(card) {
+        card.addEventListener('click', function() {
+            const id = card.dataset.project;
+            const modal = document.getElementById('project-modal-' + id);
+            if (modal) modal.classList.add('open');
+        });
+    });
+
+    document.querySelectorAll('.project-modal').forEach(function(modal) {
+        modal.querySelector('.project-modal-close').addEventListener('click', function(e) {
+            e.stopPropagation();
+            modal.classList.remove('open');
+        });
+
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) modal.classList.remove('open');
+        });
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            document.querySelectorAll('.project-modal.open').forEach(function(m) {
+                m.classList.remove('open');
+            });
+        }
+    });
+
     // Certificate modal
     const modal = document.getElementById('cert-modal');
     if (modal) {

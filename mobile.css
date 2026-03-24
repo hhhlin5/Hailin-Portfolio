@@ -175,7 +175,11 @@
         width: 100%;
     }
 
-    /* Skills: already 2 columns on desktop, keep same on tablet */
+    /* Skills: 2 columns on tablet */
+    .skill-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .skill-category {
         width: auto;
     }

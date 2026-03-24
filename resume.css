@@ -196,7 +196,7 @@
 }
 
 .skill {
-    max-width: 800px;
+    max-width: 1050px;
     margin: 40px auto;
     padding: 0 20px;
     background-color: transparent;
@@ -211,7 +211,7 @@
 
 .skill-categories {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
 }
 
@@ -219,7 +219,6 @@
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    align-self: start;
 }
   
 .skill-category h3 {
